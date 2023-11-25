@@ -28,16 +28,3 @@ sonrasında aşağıdaki komut ile image'ı kontrol edebilirsiniz
 api kullanıma hazır 
 
 
-## API'nin Başarısı Hakkında:
-
-Gönderilen veri için oluşturulan modelin başarısı aşağıda gösterilmiştir.
-
-NOT: Gönderilen veri tam olarak yeterli bir veri olmadığı için sonuçlar böyledir. Modelin doğruluğunu artırmak için daha fazla ve çeşitli veri toplanması gerekmektedir.
-
-- Classifiacation Report
-
-    ![Alt text](image-1.png)
-
-- Confusion Matrix
-
-    ![Alt text](image-2.png)
