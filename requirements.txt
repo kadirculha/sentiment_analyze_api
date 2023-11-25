@@ -1,6 +1,6 @@
-fastapi
-uvicorn
-pandas
-numpy
-transformers
-pip install torch
+fastapi==0.103.2
+uvicorn==0.23.2
+pandas==2.0.3
+numpy==1.24.4
+transformers==4.34.0
+torch==2.1.0

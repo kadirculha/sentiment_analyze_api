@@ -1,9 +1,11 @@
 from fastapi import FastAPI, HTTPException
 import uvicorn
+
 from sentiment_analyze.sentiment import SentimentAnalyze
 
 app = FastAPI()
 sentiment_analysis = SentimentAnalyze()
+
 
 @app.get('/analyze_sentiment')
 def get_sentiment(text: str):
@@ -14,14 +16,11 @@ def get_sentiment(text: str):
    :param text:
    :return:
    """
-
-    score = sentiment_analysis.get_sentiment_score(text=text)
+    print(text)
     state = sentiment_analysis.get_sentiment_state(text=text)
-
     return {
-        "sentiment_state": state,
-        "sentiment_score": round(score, 3)
-    }
+        "sentence": text,
+        "sentiment_state": state}
 
 
 if __name__ == '__main__':
