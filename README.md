@@ -11,6 +11,7 @@ Daha Sonra virtual environment oluşturup gerekli kütüphaneleri kurmalısını
 
     pip install -r requirements.txt
 
+    python app.py
 ### API'yi dockerize etme
 Build alma 
 
