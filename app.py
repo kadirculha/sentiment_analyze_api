@@ -16,11 +16,16 @@ def get_sentiment(text: str):
    :param text:
    :return:
    """
-    print(text)
-    state = sentiment_analysis.get_sentiment_state(text=text)
-    return {
-        "sentence": text,
-        "sentiment_state": state}
+    try:
+        print(text)
+        state = sentiment_analysis.get_sentiment_state(text=text)
+        return {
+            "sentence": text,
+            "sentiment_state": state}
+
+    except Exception as e:
+        print(f"Hata oluştu: {str(e)}")
+        raise HTTPException(status_code=500, detail="Internal Server Error")
 
 
 if __name__ == '__main__':
